@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+    <script>
+        function Change(checkbox) {
+            if (checkbox.name === 'Paper') {
+                document.getElementById('project').checked = false;
+            } else if (checkbox.name === 'project') {
+                document.getElementById('Paper').checked = false;
+            }
+        }
+        function Change1(checkbox) {
+            if (checkbox.name === 'quiz') {
+                document.getElementById('just').checked = false;
+            } else if (checkbox.name === 'just') {
+                document.getElementById('quiz').checked = false;
+            }
+        }
+        function Change2(checkbox) {
+            if (checkbox.name === 'debug') {
+                document.getElementById('web').checked = false;
+            } else if (checkbox.name === 'web') {
+                document.getElementById('debug').checked = false;
+            }
+        }
+        function Change3(checkbox) {
+            if (checkbox.name === 'db') {
+                document.getElementById('tech').checked = false;
+            } else if (checkbox.name === 'tech') {
+                document.getElementById('db').checked = false;
+            }
+        }
+        function Change4(checkbox) {
+            if (checkbox.name === 'clip') {
+                document.getElementById('conn').checked = false;
+            } else if (checkbox.name === 'clip') {
+                document.getElementById('conn').checked = false;
+            }
+        }
+        function Change5(checkbox) {
+            if (checkbox.name === 'fire') {
+                document.getElementById('trea').checked = false;
+            } else if (checkbox.name === 'trea') {
+                document.getElementById('fire').checked = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="c">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user">
+                <div class="box">
+                    <span class="det">Name</span>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="box">
+                    <span class="det">College</span>
+                    <input type="text" placeholder="Enter your college name">
+                </div>
+            </div><br><br>
+            <div class="user">
+                <div class="box">
+                    <span class="det">Department</span>
+                    <select name="Department">
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="it">IT</option>
+                        <option value="aids">AIDS</option>
+                        <option value="eee">EEE</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <span class="det">Year</span>
+                    <select name="year">
+                        <option value="1">I Year</option>
+                        <option value="2">II Year</option>
+                        <option value="3">III Year</option>
+                        <option value="4">IV Year</option>
+                    </select>
+                    </div>
+                <div class="box">
+                    <span class="det">Gender</span>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div><br><br>
+            <div class="user">
+                <div class="box">
+                    <span class="det">Email</span>
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="box">
+                    <span class="det">Phone Number</span>
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+            </div><br><br>
+            <div class="user">
+                <div class="box">
+                    <span class="det">IE CLUB</span><br><br>
+                    <span class="det">TECHNICAL</span><br>
+                    <input type="checkbox" name="Paper" id="Paper" onchange="Change(this)"><label for="">Paper Presentation</label><br>
+                    <input type="checkbox" name="quiz" id="quiz" onchange="Change1(this)"><label for="">Quiziz</label><br>
+                    <input type="checkbox" name="debug" id="debug" onchange="Change2(this)"><label for="">Code Debugging</label><br>
+                    <input type="checkbox" name="db" id="db" onchange="Change3(this)"><label for="">DB Mania</label><br><br>
+                    <span class="det">NON TECHNICAL</span><br>
+                    <input type="checkbox" name="conn" id="conn" onchange="Change4(this)"><label for="">Connections</label><br>
+                    <input type="checkbox" name="trea" id="trea" onchange="Change5(this)"><label for="">Treasure Hunt</label><br>
+                </div>
+                <div class="box">
+                    <span class="det">IEE CLUB</span><br><br>
+                    <span class="det">TECHNICAL</span><br>
+                    <input type="checkbox" name="project" id="project" onchange="Change(this)"><label for="">Project Presentation</label><br>
+                    <input type="checkbox" name="tech" id="tech" onchange="Change3(this)"><label for="">Tech Geeks</label><br>
+                    <input type="checkbox" name="just" id="just" onchange="Change1(this)"><label for="">Just a minute</label><br>
+                    <input type="checkbox" name="web" id="web" onchange="Change2(this)"><label for="">Web Designing</label><br><br>
+                    <span class="det">NON TECHNICAL</span><br>
+                    <input type="checkbox" name="clip" id="clip" onchange="Change4(this)"><label for="">Clips and Pics</label><br>
+                    <input type="checkbox" name="fire" id="fire" onchange="Change5(this)"><label for="">Fire Run</label><br>
+                </div>
+                <div class="box">
+                    <span class="det">WORKSHOP</span><br><br>
+                    <input type="radio" name="work"><label for="">Augemented Reality</label><br><br>
+                    <input type="radio" name="work"><label for="">IOT Fundamentals</label><br>
+                </div>
+            </div><br><br>
+            <div class="note">
+                <div class="no">Note:</div>
+                <ul>
+                    <li>The Participant can attend only one events in a specfic time.</li>
+                    <li>For group events, please register each team member separately.
+                    (A team should have between 2 and 4 members)</li>
+                    <li>Food and Transport Facility will be arranged.</li>
+                    <li>Certificates will be provided.</li>
+                    <li>Decision of the judges will be final and binding.</li>
+                </ul>
+            </div><br><br>
+            <input type="checkbox"><label for="" required>&nbsp;&nbsp;I read all rules and instructions</label><br><br>
+            <div class="b">
+                <center><input type="submit" value="Register"></center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

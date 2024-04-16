@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #0c192c;
+    background-attachment: fixed;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+}
+.nav{
+    padding-bottom: 1px;
+    background-color: #041a33;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: static;
+}
+.logo{
+    color: whitesmoke;
+    font-size: 50px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s /var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+
+}
+.n p{
+    font-size: 5rem;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    padding: 200px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.ab{
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 50px;
+}
+.ab h2{
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.ab .abo p{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.evetit{
+    font-size: 5rem;
+    color: whitesmoke;
+}
+.club h1{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    left: 43%;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.event p{
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    left: 8%;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.eve{
+    margin: 90px;
+    margin-top: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.eve .eve1{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve1 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve1 p{
+    padding-top: 1.5rem;
+}
+.eve .eve2{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve2 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve2 p{
+    padding-top: 1.5rem;
+}
+.eve .eve3{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve3 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve3 p{
+    padding-top: 1.5rem;
+}
+.eve .eve4{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve4 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve4 p{
+    padding-top: 1.5rem;
+}
+.eve .eve1:hover{
+    background-image: url(paper.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve2:hover{
+    background-image: url(quiz.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve3:hover{
+    background-image: url(debug.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve4:hover{
+    background-image: url(db.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve5{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve5 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve5 p{
+    padding-top: 1.5rem;
+}
+.eve .eve6{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve6 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve6 p{
+    padding-top: 1.5rem;
+}
+.eve .eve5:hover{
+    background-image: url(connection.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve6:hover{
+    background-image: url(treasure.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve7{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve7 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve7 p{
+    padding-top: 1.5rem;
+}
+.eve .eve8{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve8 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve8 p{
+    padding-top: 1.5rem;
+}
+.eve .eve9{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve9 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve9 p{
+    padding-top: 1.5rem;
+}
+.eve .eve10{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve10 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve10 p{
+    padding-top: 1.5rem;
+}
+.eve .eve7:hover{
+    background-image: url(project.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve8:hover{
+    background-image: url(tech.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve9:hover{
+    background-image: url(just.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve10:hover{
+    background-image: url(web.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve11{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve11 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve11 p{
+    padding-top: 1.5rem;
+}
+.eve .eve12{
+    
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+.eve .eve12 h3{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.eve .eve12 p{
+    padding-top: 1.5rem;
+}
+.eve .eve11:hover{
+    background-image: url(photo.jpg);
+    background-size: cover;
+    color: white;
+}
+.eve .eve12:hover{
+    background-image: url(free.jpg);
+    background-size: cover;
+    color: white;
+}
